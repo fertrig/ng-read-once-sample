@@ -15,6 +15,6 @@ if (process.env.NODE_ENV !== "development") {
 
 app.use("/", routes.router);
 
-app.listen(process.env.PORT, function() {
-	console.log("Web server listening at port %s", process.env.PORT);
+app.listen(process.env.PORT || 3131, function() {
+	console.log("Web server listening at port %s", process.env.PORT || 3131);
 });
