@@ -12,7 +12,7 @@
     "npm": "2.7.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/grunt-cli/bin/grunt build"
   },
   "author": "Fernando Trigoso",
   "license": "ISC",
