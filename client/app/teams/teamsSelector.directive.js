@@ -9,7 +9,7 @@
 	function teamsSelector(teamsRepository) {
 		var directive = {
 			restrict: "E",
-			templateUrl: "teams-selector.html",
+			templateUrl: "app/teams/teams-selector.html",
 			controller: controller
 		};
 

@@ -1,1 +1,10 @@
-select.form-control(id="teams-sel", name="teamSel" ng-model="team", ng-options="team.name for team in teams")
+table.table.table-hover
+	thead
+		tr
+			th Team name
+			th Team captain
+	tbody
+		tr(ng-repeat="team in teams")
+			td 
+				a(href="#/team/{{team.id}}") {{team.name}}
+			td {{team.captain}}

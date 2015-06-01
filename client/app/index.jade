@@ -13,14 +13,26 @@ html(ng-app="app")
 		script(type="text/javascript", src="/app/core/core.module.js")
 		script(type="text/javascript", src="/app/core/repository.js")
 
+		script(type="text/javascript", src="/app/teams/teams.module.js")
 		script(type="text/javascript", src="/app/teams/config.route.js")
 		script(type="text/javascript", src="/app/teams/team.controller.js")
 		script(type="text/javascript", src="/app/teams/teamsList.directive.js")
-		script(type="text/javascript", src="/app/teams/teams.module.js")
 		script(type="text/javascript", src="/app/teams/teams.repository.js")
 		script(type="text/javascript", src="/app/teams/teamsSelector.directive.js")
 	body
 
-		teams-selector
-		teams-list
-		div(ng-view)
+		.row
+			.col-xs-3
+
+				.row
+					.col-xs-12
+						teams-selector
+
+				.row
+					.col-xs-12
+						teams-list
+
+			.col-xs-3			
+				.row
+					.col-xs-12
+						div(ng-view)

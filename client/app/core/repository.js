@@ -12,24 +12,21 @@
 
 			this.read = read;
 
-			loaded = false;
-			calling = false;
-			callers = [];
-			data = [];
+			var loaded = false,
+				calling = false,
+				callers = [],
+				data = [];
 
 			function read() {
 				if (loaded) {
-					console.log("data already loaded");
 					return $q.when(data);
 				}
 				else if (calling) {
-					console.log("call while calling api");
 					var deferred = $q.defer();
 					callers.push(deferred);
 					return deferred.promise;
 				}
 				else {
-					console.log("calling api");
 					calling = true;
 					return $http.post(apiPath)
 						.then(function(res) {

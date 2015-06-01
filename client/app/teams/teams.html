@@ -1,11 +1,15 @@
 
-<table>
-  <th>
-    <td>Team name</td>
-    <td>Team captain</td>
-  </th>
-  <tr ng-repeat="team in teams">
-    <td> <a href="#/team/{{team.id}}">{{team.name}}</a></td>
-    <td>{{team.captain}}</td>
-  </tr>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Team name</th>
+      <th>Team captain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="team in teams">
+      <td> <a href="#/team/{{team.id}}">{{team.name}}</a></td>
+      <td>{{team.captain}}</td>
+    </tr>
+  </tbody>
 </table>

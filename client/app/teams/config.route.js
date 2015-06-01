@@ -9,10 +9,10 @@
 	function configure($routeProvider) {
 		$routeProvider
 			.when("/", {
-				redirectTo: "/teams/1"
+				redirectTo: "/team/1"
 			})
-			.when("/teams/:teamId", {
-				templateUrl: "team.html",
+			.when("/team/:teamId", {
+				templateUrl: "app/teams/team.html",
 				controller: "Team"
 			});
 	};

@@ -8,16 +8,34 @@
     <script type="text/javascript" src="/app/app.module.js"></script>
     <script type="text/javascript" src="/app/core/core.module.js"></script>
     <script type="text/javascript" src="/app/core/repository.js"></script>
+    <script type="text/javascript" src="/app/teams/teams.module.js"></script>
     <script type="text/javascript" src="/app/teams/config.route.js"></script>
     <script type="text/javascript" src="/app/teams/team.controller.js"></script>
     <script type="text/javascript" src="/app/teams/teamsList.directive.js"></script>
-    <script type="text/javascript" src="/app/teams/teams.module.js"></script>
     <script type="text/javascript" src="/app/teams/teams.repository.js"></script>
     <script type="text/javascript" src="/app/teams/teamsSelector.directive.js"></script>
   </head>
   <body>
-    <teams-selector></teams-selector>
-    <teams-list></teams-list>
-    <div ng-view></div>
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="row">
+          <div class="col-xs-12">
+            <teams-selector></teams-selector>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <teams-list></teams-list>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3">			
+        <div class="row">
+          <div class="col-xs-12">
+            <div ng-view></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

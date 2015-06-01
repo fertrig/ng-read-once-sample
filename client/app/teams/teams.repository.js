@@ -21,10 +21,10 @@
 		}
 
 		function getById(id) {
-			return repos.read()
+			return repo.read()
 				.then(function(teams) {
 					for (var i = 0; i < teams.length; i++) {
-						if (id === teams[i].id) {
+						if (id === teams[i].id.toString()) {
 							return teams[i];
 						}
 					}

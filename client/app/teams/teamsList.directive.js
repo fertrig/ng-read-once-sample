@@ -3,13 +3,13 @@
 
 	angular
 		.module("app.teams")
-		.controller("teamsList", teamsList);
+		.directive("teamsList", teamsList);
 
 	/* @ngInject */
 	function teamsList(teamsRepository) {
 		var directive = {
 			restrict: "E",
-			templateUrl: "teams.html",
+			templateUrl: "app/teams/teams.html",
 			controller: controller
 		};
 
