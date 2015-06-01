@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="/app/app.module.js"></script>
+    <script type="text/javascript" src="/app/core/core.module.js"></script>
+    <script type="text/javascript" src="/app/core/repository.js"></script>
+    <script type="text/javascript" src="/app/teams/config.route.js"></script>
+    <script type="text/javascript" src="/app/teams/team.controller.js"></script>
+    <script type="text/javascript" src="/app/teams/teamsList.directive.js"></script>
+    <script type="text/javascript" src="/app/teams/teams.module.js"></script>
+    <script type="text/javascript" src="/app/teams/teams.repository.js"></script>
+    <script type="text/javascript" src="/app/teams/teamsSelector.directive.js"></script>
+  </head>
+  <body>
+    <teams-selector></teams-selector>
+    <teams-list></teams-list>
+    <div ng-view></div>
+  </body>
+</html>

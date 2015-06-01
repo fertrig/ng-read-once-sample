@@ -1,0 +1,8 @@
+table
+	th
+		td Team name
+		td Team captain
+	tr(ng-repeat="team in teams")
+		td 
+			a(href="#/team/{{team.id}}") {{team.name}}
+		td {{team.captain}}

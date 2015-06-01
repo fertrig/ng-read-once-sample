@@ -1,0 +1,28 @@
+{
+  "name": "ng-read-once-sample",
+  "version": "0.0.1",
+  "description": "Sample angular app that calls API once",
+  "main": "server/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fertrig/ng-read-once-sample.git"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.7.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Trigoso",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.2.x",
+    "bower": "^1.3.12",
+    "express": "4.8.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jade": "^0.14.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "jade": "1.3.x"
+  }
+}
