@@ -1,6 +1,6 @@
 {
 	"name": "Sample Angular App - Read Once",
-	"description": "Sample angular app, service reads once regardless of number of callers.",
+	"description": "Angular service that calls API once. First caller calls API, subsequent callers read from memory.",
 	"repository": "https://github.com/fertrig/ng-read-once-sample",
 	"keywords": ["node", "angular"]
 }
