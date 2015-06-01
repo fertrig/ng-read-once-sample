@@ -1,4 +1,5 @@
 $ grunt build
+
 $ node server/app.js
 
 Go to: http://localhost:3131/
