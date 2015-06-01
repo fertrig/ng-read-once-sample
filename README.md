@@ -1,5 +1,6 @@
-Angular service that calls API once
-First caller calls API, subsequent callers read from memory
+###Angular service that calls API once
+
+####First caller calls API, subsequent callers read from memory
 
 From blog post: http://www.fernandotrigoso.com/read-once-using-angular
 
